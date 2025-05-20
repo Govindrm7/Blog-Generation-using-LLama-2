@@ -7,10 +7,10 @@ Topics covered: Generative AI, LLama2, LangChain, Streamlit, Python, HuggingFace
 
 If you like this project, please follow my Github account, or click on the 'star' icon for the repo!
 
-## 🖼️ Application Screenshot
+## Application Screenshot
 
-![App Screenshot](<img width="1348" alt="Screenshot 2025-05-20 at 12 07 35 PM" src="https://github.com/user-attachments/assets/40dd4b94-416b-4af1-b20b-cb1bb202ec83" />
-)
+![App Screenshot](App%2Screenshot.png)
+
 ## Getting Started
 
 Here’s a more technical, professional, and straightforward version of your sentence:

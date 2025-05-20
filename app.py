@@ -1,18 +1,21 @@
 import streamlit as st
 from langchain.prompts import PromptTemplate
 from langchain.llms import CTransformers
+from langchain_community.llms import CTransformers
+
 # Need to use CTransformers as this is the provided python binding for GGML models 
 # Using LLama 2-7B GGML model available on HuggingFace: https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML
 
 # Function to get response from LLAMA 2 model
 def getLLamaresponse(input_text, no_words, blog_style):
-    # Calling LLama2 model
-    # TheBloke/Llama-2-7B-Chat-GGML
-    # 'models/llama-2-7b-chat.ggmlv3.q8_0.bin'
-    llm = CTransformers(model = 'TheBloke/Llama-2-7B-Chat-GGML', model_file='/Users/govindrajeshmudavadkar/Desktop/Govind/Projects/Blog Generation/models/llama-2-7b-chat.ggmlv3.q8_0.bin',
-                        model_type = 'llama',
-                        config = {'max_new_tokens': 256,
-                                  'temperature': 0.01})
+    llm = CTransformers(
+        model_file='models/llama-2-7b-chat.ggmlv3.q8_0.bin',  # Local path relative to the repo
+        model_type='llama',
+        config={
+            'max_new_tokens': 256,
+            'temperature': 0.01
+        }
+    )
     # Temperature - A randomness measure for the LLM model. Here, using low temperature -> low randomness -> more predictable outputs
 
     # Prompt Template

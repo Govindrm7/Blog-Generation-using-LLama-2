@@ -55,7 +55,3 @@ Additionally, you can deploy your Streamlit app on Streamlit Community Cloud by 
 * [LLaMA 2 GGML Model (HuggingFace)](https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML?source=post_page-----fcb0a3c55278--------------------------------) – A quantized version of the LLaMA 2 7B Chat model hosted on HuggingFace, optimized for local CPU/GPU inference.
 
 * [LangChain + CTransformers Integration](https://python.langchain.com/docs/integrations/providers/ctransformers/) – Enables seamless use of GGML models within LangChain through the `ctransformers` provider.
-
-
-## Version of the Deployed App
-

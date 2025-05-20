@@ -9,6 +9,7 @@ from langchain_community.llms import CTransformers
 # Function to get response from LLAMA 2 model
 def getLLamaresponse(input_text, no_words, blog_style):
     llm = CTransformers(
+        model="llama-2-7b-chat", 
         model_file='models/llama-2-7b-chat.ggmlv3.q8_0.bin',  # Local path relative to the repo
         model_type='llama',
         config={

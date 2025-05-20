@@ -9,7 +9,7 @@ def getLLamaresponse(input_text, no_words, blog_style):
     # Calling LLama2 model
     # TheBloke/Llama-2-7B-Chat-GGML
     # 'models/llama-2-7b-chat.ggmlv3.q8_0.bin'
-    llm = CTransformers(model = 'TheBloke/Llama-2-7B-Chat-GGML', model_file='llama-2-7b-chat.ggmlv3.q8_0.bin',
+    llm = CTransformers(model = 'TheBloke/Llama-2-7B-Chat-GGML', model_file='/Users/govindrajeshmudavadkar/Desktop/Govind/Projects/Blog Generation/models/llama-2-7b-chat.ggmlv3.q8_0.bin',
                         model_type = 'llama',
                         config = {'max_new_tokens': 256,
                                   'temperature': 0.01})
@@ -48,7 +48,7 @@ with col2:
     blog_style = st.selectbox('Blog Target Audience', ('Researchers', 'Data Scientists', "General"), index = 0)
 
 # Button to start generation process
-submit = st.button("Generate")
+submit = st.button("Generate the Blog")
 
 # Final Response
 if submit:

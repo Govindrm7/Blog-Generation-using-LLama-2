@@ -9,7 +9,7 @@ If you like this project, please follow my Github account, or click on the 'star
 
 ## Application Screenshot
 
-![App Screenshot](App%2Screenshot.png)
+![App Screenshot](https://raw.githubusercontent.com/Govindrm7/Blog-Generation-using-LLama-2/main/App%20Screenshot.png)
 
 ## Getting Started
 
